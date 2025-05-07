@@ -1,0 +1,202 @@
+html {
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  /* Optional: Smooth hover effect */
+  nav a {
+    transition: color 0.3s ease;
+  }
+  
+  nav a:hover {
+    text-decoration: none;
+  }
+
+ 
+  *{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+  }
+
+  /*Hero Section*/
+#hero{
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+    min-height: 80vh;
+}
+
+/* Shop Section */
+#shop {
+    padding: 2rem 0;
+}
+
+#shop h2 {
+    margin-bottom: 2rem;
+}
+
+/* Product Cards */
+.group {
+  transition: transform 0.3s, box-shadow 0.3s;
+  height: 100%;
+}
+
+.group:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.product-img {
+  width: 100%;
+  height: 200px; /* or adjust based on your layout */
+  object-fit: cover;
+  border-radius: 0.75rem; /* rounded-lg */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.product-card:hover .product-img {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+}
+/* Small tablets (min-width: 640px) */
+@media (min-width: 640px) {
+  .product-img {
+    height: 200px;
+  }
+}
+
+/* Tablets and small laptops (min-width: 768px) */
+@media (min-width: 768px) {
+  .product-img {
+    height: 220px;
+  }
+}
+
+/* Desktops (min-width: 1024px) */
+@media (min-width: 1024px) {
+  .product-img {
+    height: 240px;
+  }
+}
+
+/* Extra-large screens (min-width: 1280px) */
+@media (min-width: 1280px) {
+  .product-img {
+    height: 260px;
+  }
+}
+
+/* Category Section */
+#Category {
+  padding: 2rem 0;
+}
+
+#Category h2 {
+  margin-bottom: 2rem;
+}
+/*testimonial section*/
+#testimonial {
+  padding: 2rem 0;
+  min-height: 60vh;
+}
+  /* Show active slide */
+  .testimonial-slide.active {
+    display: flex;
+  }
+
+  /* Dot Styling */
+  .dot {
+    transition: background-color 0.3s ease;
+  }
+
+  .active-dot {
+    background-color: #4F46E5; /* Indigo-600 or change to your theme color */
+  }
+
+  /* About Section */
+#about {
+  padding: 2rem 0;
+  min-height: 60vh;
+}
+
+#about img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+/* Footer */
+footer {
+  padding: 2rem 0;
+}
+
+footer h2, footer h3 {
+  margin-bottom: 1rem;
+}
+
+/* Media Queries for Responsiveness */
+
+/* Small tablets (min-width: 640px) */
+@media (min-width: 640px) {
+  .product-img {
+    height: 12rem;
+  }
+
+  .hero-img {
+    width: 350px;
+  }
+}
+
+/* Tablets and small laptops (min-width: 768px) */
+@media (min-width: 768px) {
+  .hero-img {
+    width: 400px;
+  }
+
+  .hero-text {
+    font-size: 2rem;
+  }
+
+  .testimonial-slide {
+    padding: 2rem 3rem;
+  }
+
+  .product-card {
+    padding: 1.5rem;
+  }
+}
+
+/* Desktops (min-width: 1024px) */
+@media (min-width: 1024px) {
+  .hero-img {
+    width: 450px;
+  }
+
+  .hero-text {
+    font-size: 2.5rem;
+  }
+
+  .navbar-links a {
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+  }
+
+  .product-card {
+    max-width: 320px;
+  }
+}
+
+/* Extra-large screens (min-width: 1280px) */
+@media (min-width: 1280px) {
+  .hero-img {
+    width: 500px;
+  }
+
+  .container {
+    padding-left: 4rem;
+    padding-right: 4rem;
+  }
+}

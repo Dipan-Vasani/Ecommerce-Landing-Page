@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page </title>
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-white">
+    <!-- Navbar -->
+  <nav class="bg-white border-b shadow-sm">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-16">
+        
+        <!-- Logo -->
+        <div class="flex-shrink-0 text-2xl font-semibold">
+            <span class="text-gray-800">App</span><span class="text-yellow-500">Mixo</span>
+          </div>
+          
+  
+        <!-- Navigation Links -->
+        <div class="hidden md:flex space-x-8 font-medium text-gray-800">
+          <a href="#hero" class="hover:text-white hover:bg-red-600 px-3 py-1 rounded transition duration-300 no-underline">Home</a>
+          <a href="#shop" class="hover:text-white hover:bg-red-600 px-3 py-1 rounded transition duration-300 no-underline">Shop</a>
+          <a href="#Category" class="hover:text-white hover:bg-red-600 px-3 py-1 rounded transition duration-300 no-underline">Categories</a> 
+          <a href="#testimonial" class="hover:text-white hover:bg-red-600 px-3 py-1 rounded transition duration-300 no-underline">Testimonials</a>
+          <a href="#about" class="hover:text-white hover:bg-red-600 px-3 py-1 rounded transition duration-300 no-underline">About</a>
+          <a href="#footer" class="hover:text-white hover:bg-red-600 px-3 py-1 rounded transition duration-300 no-underline">Contact</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!---Hero Section -->
+  <section id="hero" class="flex flex-col-reverse lg:flex-row items-center gap-12 px-4 py-12 lg:px-20">
+  <div class="flex-1 text-center lg:text-left">
+    <p class="text-sm text-gray-500 mb-2">From $17000.00</p>
+    <h1 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">Apple iPhone 15</h1>
+    <p class="text-gray-600 mb-6">3 Colors</p>
+    <p class="text-gray-700 mb-8">Shop the newest phones with best features and performance.</p>
+    <button class="bg-red-500 hover:bg-red-600 text-white font-bold py-3 px-6 rounded-md">Shop Now</button>
+  </div>
+  <div class="flex-1 text-center">
+    <img src="img/iphone.jpg" alt="Apple iPhone 15" class="max-w-full w-[300px] sm:w-[400px] md:w-[450px] mx-auto">
+  </div>
+</section>
+
+  <!--Shop Section-->
+  <section id="shop" class="max-w-7xl mx-auto py-12 px-4">
+    <h2 class="text-4xl font-bold mb-8 text-center text-gray-800">Shop Our Products</h2>
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mb-10">
+        <div class="h-full group bg-white p-4 rounded-2xl shadow-md transition-all duration-300 transform hover:-translate-y-2 hover:shadow-xl">
+            <div class="relative overflow-hidden rounded-lg mb-4">
+                <img src="img/product1.jpg" alt="Product" class="w-full h-48 object-cover transition-transform duration-300 group-hover:scale-105">
+            </div>
+            <h3 class="text-lg font-semibold text-gray-800">Product Name 1</h3>
+            <p class="text-gray-600">Short description goes here.</p>
+            <div class="mt-2 font-bold text-xl text-green-600">$29.99</div>
+            <button class="mt-4 w-full bg-blue-600 text-white py-2 rounded-lg hover:bg-blue-700 transition">Add to Cart</button>
+        </div>
+
+        <div class="h-full group bg-white p-4 rounded-2xl shadow-md transition-all duration-300 transform hover:-translate-y-2 hover:shadow-xl">
+            <div class="relative overflow-hidden rounded-lg mb-4">
+                <img src="img/product8.jpg" alt="Product" class="w-full h-48 object-cover transition-transform duration-300 group-hover:scale-105">
+            </div>
+            <h3 class="text-lg font-semibold text-gray-800">Product Name 2</h3>
+            <p class="text-gray-600">Short description goes here.</p>
+            <div class="mt-2 font-bold text-xl text-green-600">$49.99</div>
+            <button class="mt-4 w-full bg-blue-600 text-white py-2 rounded-lg hover:bg-blue-700 transition">Add to Cart</button>
+        </div>
+
+        <div class="h-full group bg-white p-4 rounded-2xl shadow-md transition-all duration-300 transform hover:-translate-y-2 hover:shadow-xl">
+            <div class="relative overflow-hidden rounded-lg mb-4">
+                <img src="img/product3.jpg" alt="Product" class="w-full h-48 object-cover transition-transform duration-300 group-hover:scale-105">
+            </div>
+            <h3 class="text-lg font-semibold text-gray-800">Product Name 3</h3>
+            <p class="text-gray-600">Short description goes here.</p>
+            <div class="mt-2 font-bold text-xl text-green-600">$39.99</div>
+            <button class="mt-4 w-full bg-blue-600 text-white py-2 rounded-lg hover:bg-blue-700 transition">Add to Cart</button>
+        </div>
+
+        <div class="h-full group bg-white p-4 rounded-2xl shadow-md transition-all duration-300 transform hover:-translate-y-2 hover:shadow-xl">
+            <div class="relative overflow-hidden rounded-lg mb-4">
+                <img src="img/product4.jpg" alt="Product" class="w-full h-48 object-cover transition-transform duration-300 group-hover:scale-105">
+            </div>
+            <h3 class="text-lg font-semibold text-gray-800">Product Name 4</h3>
+            <p class="text-gray-600">Short description goes here.</p>
+            <div class="mt-2 font-bold text-xl text-green-600">$59.99</div>
+            <button class="mt-4 w-full bg-blue-600 text-white py-2 rounded-lg hover:bg-blue-700 transition">Add to Cart</button>
+        </div>
+    </div>
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mb-10">
+        <div class="h-full group bg-white p-4 rounded-2xl shadow-md transition-all duration-300 transform hover:-translate-y-2 hover:shadow-xl">
+            <div class="relative overflow-hidden rounded-lg mb-4">
+                <img src="img/product5.jpg" alt="Product" class="w-full h-48 object-cover transition-transform duration-300 group-hover:scale-105">
+            </div>
+            <h3 class="text-lg font-semibold text-gray-800">Product Name 5</h3>
+            <p class="text-gray-600">Short description goes here.</p>
+            <div class="mt-2 font-bold text-xl text-green-600">$29.99</div>
+            <button class="mt-4 w-full bg-blue-600 text-white py-2 rounded-lg hover:bg-blue-700 transition">Add to Cart</button>
+        </div>
+
+        <div class="h-full group bg-white p-4 rounded-2xl shadow-md transition-all duration-300 transform hover:-translate-y-2 hover:shadow-xl">
+            <div class="relative overflow-hidden rounded-lg mb-4">
+                <img src="img/product6.jpg" alt="Product" class="w-full h-48 object-cover transition-transform duration-300 group-hover:scale-105">
+            </div>
+            <h3 class="text-lg font-semibold text-gray-800">Product Name 6</h3>
+            <p class="text-gray-600">Short description goes here.</p>
+            <div class="mt-2 font-bold text-xl text-green-600">$49.99</div>
+            <button class="mt-4 w-full bg-blue-600 text-white py-2 rounded-lg hover:bg-blue-700 transition">Add to Cart</button>
+        </div>
+
+        <div class="h-full group bg-white p-4 rounded-2xl shadow-md transition-all duration-300 transform hover:-translate-y-2 hover:shadow-xl">
+            <div class="relative overflow-hidden rounded-lg mb-4">
+                <img src="img/product7.jpg" alt="Product" class="w-full h-48 object-cover transition-transform duration-300 group-hover:scale-105">
+            </div>
+            <h3 class="text-lg font-semibold text-gray-800">Product Name 7</h3>
+            <p class="text-gray-600">Short description goes here.</p>
+            <div class="mt-2 font-bold text-xl text-green-600">$39.99</div>
+            <button class="mt-4 w-full bg-blue-600 text-white py-2 rounded-lg hover:bg-blue-700 transition">Add to Cart</button>
+        </div>
+
+        <div class="h-full group bg-white p-4 rounded-2xl shadow-md transition-all duration-300 transform hover:-translate-y-2 hover:shadow-xl">
+            <div class="relative overflow-hidden rounded-lg mb-4">
+                <img src="img/product8.jpg" alt="Product" class="w-full h-48 object-cover transition-transform duration-300 group-hover:scale-105">
+            </div>
+            <h3 class="text-lg font-semibold text-gray-800">Product Name 8</h3>
+            <p class="text-gray-600">Short description goes here.</p>
+            <div class="mt-2 font-bold text-xl text-green-600">$59.99</div>
+            <button class="mt-4 w-full bg-blue-600 text-white py-2 rounded-lg hover:bg-blue-700 transition">Add to Cart</button>
+        </div>
+    </div>
+</section>
+
+  <!-- Category Section -->
+  <section id="Category" class="max-w-7xl mx-auto py-20 px-4">
+    <h2 class="text-4xl font-bold text-center mb-16 text-gray-800">Shop By Category</h2>
+    <div class="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-4 gap-8 mb-10">
+        <div class="group bg-white border border-gray-200 rounded-2xl shadow-sm transition-all duration-300 hover:shadow-lg transform hover:-translate-y-2">
+            <div class="p-6 text-center">
+                <img src="img/motorola.png" alt="Smartphones" class="mx-auto w-24 h-24 mb-4">
+                <h3 class="text-lg font-semibold text-gray-800">Smartphones</h3>
+            </div>
+        </div>
+
+        <div class="group bg-white border border-gray-200 rounded-2xl shadow-sm transition-all duration-300 hover:shadow-lg transform hover:-translate-y-2">
+            <div class="p-6 text-center">
+                <img src="img/product2.jpg" alt="Laptops" class="mx-auto w-24 h-24 mb-4">
+                <h3 class="text-lg font-semibold text-gray-800">Laptops</h3>
+            </div>
+        </div>
+
+        <div class="group bg-white border border-gray-200 rounded-2xl shadow-sm transition-all duration-300 hover:shadow-lg transform hover:-translate-y-2">
+            <div class="p-6 text-center">
+                <img src="img/headphone 1.jpg" alt="Headphones" class="mx-auto w-24 h-24 mb-4">
+                <h3 class="text-lg font-semibold text-gray-800">Headphones</h3>
+            </div>
+        </div>
+
+        <div class="group bg-white border border-gray-200 rounded-2xl shadow-sm transition-all duration-300 hover:shadow-lg transform hover:-translate-y-2">
+            <div class="p-6 text-center">
+                <img src="img/watch1.png" alt="Smartwatches" class="mx-auto w-24 h-24 mb-4">
+                <h3 class="text-lg font-semibold text-gray-800">Smartwatches</h3>
+            </div>
+        </div>
+    </div>
+
+    <div class="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-4 gap-8">
+        <div class="group bg-white border border-gray-200 rounded-2xl shadow-sm transition-all duration-300 hover:shadow-lg transform hover:-translate-y-2">
+            <div class="p-6 text-center">
+                <img src="img/game1.jpg" alt="Gaming" class="mx-auto w-24 h-24 mb-4">
+                <h3 class="text-lg font-semibold text-gray-800">Gaming</h3>
+            </div>
+        </div>
+
+        <div class="group bg-white border border-gray-200 rounded-2xl shadow-sm transition-all duration-300 hover:shadow-lg transform hover:-translate-y-2">
+            <div class="p-6 text-center">
+                <img src="img/product4.jpg" alt="Televisions" class="mx-auto w-24 h-24 mb-4">
+                <h3 class="text-lg font-semibold text-gray-800">Televisions</h3>
+            </div>
+        </div>
+
+        <div class="group bg-white border border-gray-200 rounded-2xl shadow-sm transition-all duration-300 hover:shadow-lg transform hover:-translate-y-2">
+            <div class="p-6 text-center">
+                <img src="img/camera1.jpg" alt="Cameras" class="mx-auto w-24 h-24 mb-4">
+                <h3 class="text-lg font-semibold text-gray-800">Cameras</h3>
+            </div>
+        </div>
+
+        <div class="group bg-white border border-gray-200 rounded-2xl shadow-sm transition-all duration-300 hover:shadow-lg transform hover:-translate-y-2">
+            <div class="p-6 text-center">
+                <img src="img/accessory1.jpg" alt="Accessories" class="mx-auto w-24 h-24 mb-4">
+                <h3 class="text-lg font-semibold text-gray-800">Accessories</h3>
+            </div>
+        </div>
+    </div>
+</section>
+
+   <!--Testimonial Section-->
+   <section  id="testimonial" class="bg-white py-12">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center">
+        <h2 class="text-3xl font-semibold text-gray-900 sm:text-4xl">
+          What Our Customers Are Saying
+        </h2>
+        <p class="mt-3 text-lg text-gray-500">
+          Discover firsthand experiences and testimonials from our valued patrons. Explore the feedback and reviews that showcase our commitment to quality, service, and customer satisfaction.
+        </p>
+      </div>
+  
+      <div class="mt-10 relative">
+        <div class="testimonial-slider-wrapper overflow-hidden rounded-md border border-gray-200 bg-gray-50">
+          <div class="testimonial-slide p-8 flex flex-col items-center text-center">
+            <img class="w-12 h-12 rounded-full object-cover shadow-md mb-4" src="https://images.unsplash.com/photo-1552058544-f2b08422138a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8cHJvZmlsZSUyMG1hbnxlbnwwfHwwfHwwfDA&auto=format&fit=crop&w=500&q=60" alt="John Davis" />
+            <p class="text-lg italic text-gray-700">
+              "I highly recommend FoodMan for any occasion. Their menu offers a fantastic variety, and the quality is consistently outstanding."
+            </p>
+            <div class="mt-6">
+              <h3 class="text-sm font-semibold text-gray-900">John Davis</h3>
+              <p class="text-xs text-gray-500">Software Engineer</p>
+            </div>
+          </div>
+          <div class="testimonial-slide p-8 flex flex-col items-center text-center hidden">
+            <img class="w-12 h-12 rounded-full object-cover shadow-md mb-4" src="img/client-2.jpg" alt="Jane Doe" />
+            <p class="text-lg italic text-gray-700">
+              "The food was absolutely delicious and the service was impeccable. A truly wonderful experience!"
+            </p>
+            <div class="mt-6">
+              <h3 class="text-sm font-semibold text-gray-900">Jane Doe</h3>
+              <p class="text-xs text-gray-500">Marketing Manager</p>
+            </div>
+          </div>
+          <div class="testimonial-slide p-8 flex flex-col items-center text-center hidden">
+            <img class="w-12 h-12 rounded-full object-cover shadow-md mb-4" src="https://images.unsplash.com/photo-1560250097-0b93528c311a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fHByb2ZpbGUlMjBtYW58ZW58MHx8MHx8fDA&auto=format&fit=crop&w=500&q=60" alt="Peter Smith" />
+            <p class="text-lg italic text-gray-700">
+              "Excellent value for money. The portions were generous, and the taste was exceptional. Will definitely be ordering again."
+            </p>
+            <div class="mt-6">
+              <h3 class="text-sm font-semibold text-gray-900">Peter Smith</h3>
+              <p class="text-xs text-gray-500">Business Owner</p>
+            </div>
+          </div>
+        </div>
+  
+        <div class="absolute bottom-0 left-0 right-0 flex justify-center space-x-2 py-4">
+          <button class="dot w-3 h-3 rounded-full bg-gray-300 focus:outline-none active-dot" aria-label="Go to slide 1"></button>
+          <button class="dot w-3 h-3 rounded-full bg-gray-300 focus:outline-none" aria-label="Go to slide 2"></button>
+          <button class="dot w-3 h-3 rounded-full bg-gray-300 focus:outline-none" aria-label="Go to slide 3"></button>
+        </div>
+  
+      </div>
+    </div>
+  </section>
+   <!--About Section-->
+   <section id="about" class="bg-white-600 py-16">
+    <div class="max-w-7xl mx-auto px-6 md:px-12 flex flex-col-reverse md:flex-row items-center gap-12">
+      <div class="w-full md:w-1/2 text-center md:text-left">
+        <h2 class="text-4xl font-bold text-gray-800 mb-4">About Our Store</h2>
+        <p class="text-gray-600 mb-6 leading-relaxed">
+          Welcome to ShopEase, your one-stop destination for high-quality and affordable products. 
+          Our mission is to provide you with the best shopping experience — from fast shipping to excellent customer service.
+        </p>
+        <p class="text-gray-600 leading-relaxed">
+          From electronics to lifestyle essentials, our curated collection ensures you find exactly what you're looking for.
+        </p>
+      </div>
+      <div class="w-full md:w-1/2">
+        <img src="img/team.jpg" alt="Store Image" class="rounded-xl shadow-lg w-full border-2">
+      </div>  
+    </div>
+   </section>
+
+   <!--Footer section-->
+   <footer id="footer" class="bg-white text-gray-600 py-10 px-6 md:px-20 border-t">
+      <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between gap-10 flex-wrap">
+        <div class="w-full md:w-1/4">
+          <h2 class="text-2xl font-bold text-gray-900">AppMixo</h2>
+          <p class="mt-2 text-sm text-gray-600">Your go-to place for everyday essentials and amazing deals.</p>
+        </div>
+
+        <div class="w-full md:w-1/5">
+          <h3 class="text-lg font-semibold text-gray-900 mb-3">Quick Links</h3>
+          <ul class="space-y-2 text-sm">
+            <li><a href="#" class="hover:text-gray-900">Home</a></li>
+            <li><a href="#" class="hover:text-gray-900">Shop</a></li>
+            <li><a href="#" class="hover:text-gray-900">About Us</a></li>
+            <li><a href="#" class="hover:text-gray-900">Contact</a></li>
+          </ul>
+        </div>
+
+        <div class="w-full md:w-1/5">
+          <h3 class="text-lg font-semibold text-gray-900 mb-3">Help</h3>
+          <ul class="space-y-2 text-sm">
+            <li><a href="#" class="hover:text-gray-900">FAQs</a></li>
+            <li><a href="#" class="hover:text-gray-900">Shipping & Returns</a></li>
+            <li><a href="#" class="hover:text-gray-900">Privacy Policy</a></li>
+            <li><a href="#" class="hover:text-gray-900">Terms of Service</a></li>
+          </ul>
+        </div>
+
+        <div class="w-full md:w-1/4">
+          <h3 class="text-lg font-semibold text-gray-900 mb-3">Contact</h3>
+          <p class="text-sm mb-2 flex items-center space-x-2">
+            <i class="fas fa-envelope text-gray-500"></i>
+            <span>support@appmixo.com</span>
+          </p>
+          <p class="text-sm mb-4 flex items-center space-x-2">
+            <i class="fas fa-phone-alt text-gray-500"></i>
+            <span>+1 234 567 8901</span>
+          </p>
+          <div class="flex space-x-4">
+            <a href="https://www.facebook.com/yourbrand" class="text-gray-500 hover:text-blue-800" target="_blank"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://twitter.com/yourbrand" class="text-gray-500 hover:text-blue-700" target="_blank"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.instagram.com/yourbrand" class="text-gray-500 hover:text-pink-800" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://github.com/yourbrand" class="text-gray-500 hover:text-gray-900" target="_blank"><i class="fab fa-github"></i></a>
+          </div>
+          
+        </div>
+      </div>
+      <div class="mt-6 text-center text-gray-500 text-sm">
+        &copy; <span id="year"></span> AppMixo. All rights reserved.
+      </div>
+   </footer>
+   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
